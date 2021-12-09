@@ -2,20 +2,21 @@
  * @Author: zhaoran
  * @Date: 2021-12-08 14:48:53
  * @LastEditors: zhaoran
- * @LastEditTime: 2021-12-09 17:48:46
+ * @LastEditTime: 2021-12-09 17:54:03
  * @Description: file content
  */
 import { defineConfig } from 'dumi';
 import { join } from 'path';
 
+let BaseUrl = '/components-lib';
+
 export default defineConfig({
   title: 'components-lib',
-  base: '/components-lib',
-  publicPath: '/components-lib',
+  base: BaseUrl,
+  publicPath: BaseUrl + '/',
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
-  favicon:
-    '/logo.png',
-  logo: '/logo.png',
+  favicon: BaseUrl + '/logo.png',
+  logo: BaseUrl + '/logo.png',
   outputPath: 'docs-dist',
   mode: 'site',
   // alias: {
