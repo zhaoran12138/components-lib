@@ -2,7 +2,7 @@
  * @Author: zhaoran
  * @Date: 2021-12-08 14:48:53
  * @LastEditors: zhaoran
- * @LastEditTime: 2021-12-09 17:46:05
+ * @LastEditTime: 2021-12-09 17:48:46
  * @Description: file content
  */
 import { defineConfig } from 'dumi';
@@ -10,8 +10,8 @@ import { join } from 'path';
 
 export default defineConfig({
   title: 'components-lib',
-  base: 'https://zhaoran12138.github.io/',
-  publicPath: 'https://zhaoran12138.github.io/',
+  base: '/components-lib',
+  publicPath: '/components-lib',
   exportStatic: {}, // 将所有路由输出为 HTML 目录结构，以免刷新页面时 404
   favicon:
     '/logo.png',
